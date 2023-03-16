@@ -80,22 +80,23 @@
                 >Register</span
               >
             </h1>
-            <form
+            <form style="text-align:left;"
               class="form-example"
-              action="login.html"
+              action="registration.html"
               method="post"
               enctype="application/x-www-form-urlencoded"
             >
               <fieldset>
               
                 <div class="form-group">
-                  <label for="username">Email address:</label>
+                  <label for="username">*Email address:</label>
                   <input
                     type="text"
                     class="form-control username"
                     id="email"
                     placeholder="email address..."
                     name="email"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -106,7 +107,25 @@
                     id="password"
                     placeholder="password..."
                     name="password"
+                    required
                   />
+                </div>
+                <div class="form-group">
+                  <label for="confirm password">Confirm Password:</label>
+                  <input
+                    type="password"
+                    class="form-control password"
+                    id="confirm password"
+                    placeholder="confirm password..."
+                    name="confirm password"
+                    required
+                  />
+                  <label for="agree">Agree</label>
+                  <select name="agree" class="form-select" aria-label="select if you agree with terms or not" id="agree" required>
+                    <option value="">make a selection</option>
+                    <option value="1">Agree</option>
+                    <option value="2">I do not Agree</option>
+                  </select>
                   <p style="text-align: right;">By creating an accout you agree to our <a style="color:#ff5932" href="!#" alt="terms and conditions hyperlink">Terms and Conditions</a></p>
                   <br />
                 </div>
