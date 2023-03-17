@@ -1,0 +1,24 @@
+
+table{
+    border:1px solid  #ff7b5d4f;
+}
+.table-contact-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+th{
+    background-color: #ff7b5d4f;
+}
+tr:nth-child(even) {
+    background-color: #ff7b5d4f;
+  }
+th,td{
+    padding:10px;
+}
+
+.table-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
